@@ -9,12 +9,6 @@ pipeline {
 
   stages {
     stage('Deploy') {
-      when {
-        beforeAgent true
-        anyOf {
-          changeset pattern: '**', comparator: 'GLOB'
-        }
-      }
       stages {
         stage('Clean Workspace') {
           steps {
