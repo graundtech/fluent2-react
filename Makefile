@@ -16,4 +16,3 @@ pack:
 	cd dist && zip -qr pack.zip . -x '*.DS_Store'
 version:
 	cat dist/version.txt
-dist/modules/web/
